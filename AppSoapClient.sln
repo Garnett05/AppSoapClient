@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSoapClient.Android", "AppSoapClient\AppSoapClient.Android\AppSoapClient.Android.csproj", "{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSoapClient", "AppSoapClient\AppSoapClient\AppSoapClient.csproj", "{D3E17ED9-07F4-40A9-8F82-3427977AB65E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7AFDEF-761F-4FBB-A4ED-9166E6F5784D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D3E17ED9-07F4-40A9-8F82-3427977AB65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E17ED9-07F4-40A9-8F82-3427977AB65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E17ED9-07F4-40A9-8F82-3427977AB65E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D3E17ED9-07F4-40A9-8F82-3427977AB65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E17ED9-07F4-40A9-8F82-3427977AB65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E17ED9-07F4-40A9-8F82-3427977AB65E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76F75DC0-B45E-44E8-A825-B1548F56B2EB}
+	EndGlobalSection
+EndGlobal
