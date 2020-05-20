@@ -4,13 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AppSoapClient.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+             x:Class="AppSoapClient.MainPage"
+             Title="Oba">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Calculator" FontSize="22" TextColor="White" FontAttributes="Bold" VerticalOptions="Center" />
+            <Image Source="calc3.png" HeightRequest="55" HorizontalOptions="EndAndExpand" BackgroundColor="LightGreen" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <StackLayout VerticalOptions="Center" Orientation="Horizontal" >
+        <Label Text="Add " FontSize="16" VerticalOptions="Center" />
+        <Entry x:Name="number1" WidthRequest="50" VerticalOptions="Center" />
+        <Label Text="+" VerticalOptions="Center" />
+        <Entry x:Name="number2" WidthRequest="50" VerticalOptions="Center" />
+        <Label x:Name="txtResult" VerticalOptions="Center" />
+        <Button Text="Calculate" Clicked="ActionSendValues" HorizontalOptions="EndAndExpand" VerticalOptions="Center" />
     </StackLayout>
-
 </ContentPage>

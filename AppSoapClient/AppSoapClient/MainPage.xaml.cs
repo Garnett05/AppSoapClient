@@ -17,5 +17,12 @@ namespace AppSoapClient
         {
             InitializeComponent();
         }
+
+        private void ActionSendValues (object sender, EventArgs args)
+        {
+            int num1 = int.Parse(number1.Text);
+            int num2 = int.Parse(number2.Text);            
+            txtResult.Text = DependencyService.Get<IServiceSOAP>().Add(num1, num2);
+        }
     }
 }
