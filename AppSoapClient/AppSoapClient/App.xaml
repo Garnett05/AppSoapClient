@@ -6,6 +6,40 @@
              mc:Ignorable="d"
              x:Class="AppSoapClient.App">
     <Application.Resources>
-
-    </Application.Resources>
+        <ResourceDictionary>
+            <!--Navigation Page Bar -->
+            <Style TargetType="Label" x:Key="lblNav" >
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            <Style TargetType="Image" x:Key="imgNav" >
+                <Setter Property="HeightRequest" Value="55" />
+                <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+                <Setter Property="BackgroundColor" Value="LightGreen" />
+            </Style>
+            <!-- Stack layout -->
+            <Style TargetType="Label" x:Key="lblStk" >
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            <Style TargetType="Button" x:Key="btnAction" >
+                <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="BackgroundColor" Value="LightGreen" />
+            </Style>
+            <!-- Global Layout-->
+            <Style TargetType="Entry" >
+                <Setter Property="WidthRequest" Value="50" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Keyboard" Value="Numeric" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="Label" >
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>    
 </Application>

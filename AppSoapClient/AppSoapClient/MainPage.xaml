@@ -8,16 +8,27 @@
              Title="Oba">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Calculator" FontSize="22" TextColor="White" FontAttributes="Bold" VerticalOptions="Center" />
-            <Image Source="calc3.png" HeightRequest="55" HorizontalOptions="EndAndExpand" BackgroundColor="LightGreen" />
+            <Label Text="Calculator" Style="{StaticResource lblNav}" />
+            <Image Source="calc3.png" Style="{StaticResource imgNav}" />
         </StackLayout>
     </NavigationPage.TitleView>
-    <StackLayout VerticalOptions="Center" Orientation="Horizontal" >
-        <Label Text="Add " FontSize="16" VerticalOptions="Center" />
-        <Entry x:Name="number1" WidthRequest="50" VerticalOptions="Center" />
-        <Label Text="+" VerticalOptions="Center" />
-        <Entry x:Name="number2" WidthRequest="50" VerticalOptions="Center" />
-        <Label x:Name="txtResult" VerticalOptions="Center" />
-        <Button Text="Calculate" Clicked="ActionSendValues" HorizontalOptions="EndAndExpand" VerticalOptions="Center" />
+    <StackLayout>
+        <Label Text="This app uses the SOAP service http://dneonline.com/calculator.asmx to do the mathematic operations" Margin="5,20,5,5" />
+        
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="15" >
+            <StackLayout Orientation="Horizontal" Margin="8" VerticalOptions="Center" >
+                <Label Text="Select the operation: " FontSize="18" VerticalOptions="Center" />
+                <Picker x:Name="pickerOperation" Title="Operations" HorizontalOptions="FillAndExpand" SelectedIndexChanged="ActionChangedPickerIndex" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="8" >
+                <Label Text="Add " Style="{StaticResource lblStk}" x:Name="lblOperation" />
+                <Entry x:Name="number1" />
+                <Label Text="+ " VerticalOptions="Center" FontSize="18" x:Name="lblOperator" />
+                <Entry x:Name="number2" />
+                <Label x:Name="txtResult" Style="{StaticResource lblStk}" />
+                <Button Text="Calculate" Clicked="ActionCalculate" Style="{StaticResource btnAction}" />
+            </StackLayout>            
+    </StackLayout>
+        <Label x:Name="lblError" FontSize="20" HorizontalOptions="Center" VerticalOptions="StartAndExpand" />
     </StackLayout>
 </ContentPage>
